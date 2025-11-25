@@ -112,6 +112,7 @@
     .choose {
       text-align: center;
       padding: 40px 20px;
+      line-height:2;
     }
 
     .cards {

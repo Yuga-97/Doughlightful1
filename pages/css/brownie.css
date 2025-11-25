@@ -21,16 +21,6 @@ header {
   border-bottom: 2px solid #ff8ba0;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo h1 {
-  color: #ff4b6e;
-  font-size: 1.5rem;
-}
 
 nav {
   display: flex;
@@ -74,12 +64,11 @@ nav a {
 }
 
 .ingredients ul {
-  list-style: disc;
   padding-left: 20px;
 }
 
 .recipe-image {
-  flex: 1 1 300px;
+  flex: 1 ;
   display: flex;
   justify-content: center;
   align-items: center;

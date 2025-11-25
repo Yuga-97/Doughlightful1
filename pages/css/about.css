@@ -45,18 +45,14 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
-  background: #5a4a4a;
+  color: #140202;
   padding: 10px 18px;
   border-radius: 3px;
   font-weight: 600;
   transition: 0.3s;
 }
 
-.nav-links a:hover {
-  background: #e63946;
-  color: #fff;
-}
+
 
 .menu-icon {
   display: none;

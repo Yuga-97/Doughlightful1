@@ -11,7 +11,9 @@ body {
   line-height: 1.6;
 }
 
-
+.name{
+  color:rgb(223, 98, 98);
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -21,16 +23,6 @@ header {
   border-bottom: 2px solid #ff8ba0;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo h1 {
-  color: #ff4b6e;
-  font-size: 1.5rem;
-}
 
 nav {
   display: flex;
