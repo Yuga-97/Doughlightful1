@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="seller_dashboard.css">
+    <style> 
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #fff;
+    padding: 25px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #555;
+    border-radius: 10px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: #ff7a59;
+    color: white;
+}
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: flex-start;   /* keep form top aligned */
+}
+
+.content-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.recipe-form {
+    width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.recipe-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.recipe-form input,
+.recipe-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.recipe-form textarea {
+    height: 90px;
+    resize: none;
+}
+
+.recipe-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color:  #ff7a59;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Vertical Navbar (SAME as product page) -->
+    <div class="sidebar">
+        <h2>Seller</h2>
+        <a href="#">Dashboard</a>
+        <a href="add_product.html">Add Product</a>
+        <a href="add_recipe.html" class="active">Add Recipe</a>
+        <a href="logout.html">signout</a>
+    </div>
+
+    <!-- Recipe Content -->
+    <div class="content">
+        <div class="content-box">
+            <h2>Add Recipe</h2>
+
+            <form class="recipe-form">
+                <label>Recipe Name</label>
+                <input type="text" placeholder="Enter recipe name">
+
+                <label>Recipe Image</label>
+                <input type="file">
+
+                <label>Ingredients</label>
+                <textarea placeholder="Enter ingredients"></textarea>
+
+                <label>Steps</label>
+                <textarea placeholder="Enter cooking steps"></textarea>
+
+                <label>Cooking Time</label>
+                <input type="text" placeholder="Eg: 30 minutes">
+
+                <a href="recipe_succ.html"><button>Add Recipe</button></a>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

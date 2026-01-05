@@ -2,7 +2,8 @@
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #ffeef2;
+  background: #ffeef2; 
+  /* background: linear-gradient(to right, #ff7a59, #ffb199); */
 }
 .navbar{
   background-color: white;

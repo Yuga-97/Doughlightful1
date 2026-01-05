@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" href="seller_dashboard.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: flex-start;   /* keep form top aligned */
+}
+
+.content-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #fff;
+    padding: 25px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #555;
+    border-radius: 10px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: #ff7a59;
+    color: white;
+}
+
+
+/* Form */
+.product-form {
+    width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.product-form input,
+.product-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.product-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+.product-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color:  #ff7a59;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Vertical Navbar -->
+    <div class="sidebar">
+        <h2>Seller</h2>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="add_product.html">Add Product</a>
+        <a href="add_recipe.html">Add Recipe</a>
+        <a href="logout.html">signout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="content-box">
+            <h2>Add Product</h2>
+
+            <form class="product-form">
+                <label>Seller Name</label>
+                <input type="text">
+
+                <label>Product Name</label>
+                <input type="text">
+
+                <label>Product Images</label>
+                <input type="file" multiple>
+
+                <label>Description</label>
+                <textarea></textarea>
+
+                <label>Price</label>
+                <input type="number">
+
+                <label>Places</label>
+                <input type="text">
+
+                <label>Discount (%)</label>
+                <input type="number">
+
+                <a href="productsucc.html"><button>Add Product</button></a>
+            </form>
+        </div>
+    </div>
+  
+</div>
+
+</body>
+</html>

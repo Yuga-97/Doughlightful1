@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Confirmed</title>
+<style>
+/* Reset & body */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ff7a59, #ffb199);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Notification Box */
+.notification {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: slideIn 0.8s ease;
+}
+
+/* Success Icon */
+.success-icon {
+    font-size: 50px;
+    color: #4BB543;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Message */
+.notification h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.notification p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+@keyframes bounce {
+    from { transform: translateY(0);}
+    to { transform: translateY(-10px);}
+}
+
+/* Responsive */
+@media(max-width: 500px){
+    .notification {
+        padding: 25px 20px;
+    }
+    .notification h2 {
+        font-size: 20px;
+    }
+    .notification p {
+        font-size: 14px;
+    }
+    .notification a{
+        text-decoration: none;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="notification">
+    <div class="success-icon">&#10004;</div> 
+    <h2>Your Order is Confirmed!</h2>
+    <p>Thank you for shopping with us.</p>
+    <a href="product.html" class="button">Back to Products</a>
+</div>
+</body>
+</html>

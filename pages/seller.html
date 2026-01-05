@@ -2,42 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller</title>
-    <link rel="stylesheet" href="../pages/css/seller.css">
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" href="seller_dashboard.css">
     <style>
-        .product_cards{
-            background-color: white;
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
 
-        }
+.navbar {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      border-bottom: 1px solid #f2f2f2;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .logo span {
+      color: #ff5e78;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    
+.dashboard {
+    width: 400px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.dashboard h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+.product-form input,
+.product-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.product-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.product-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2e86de;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-form button:hover {
+    background-color: #1b4f72;
+}
+
     </style>
 </head>
 <body>
-    <header class="navbar">
+<header class="navbar">
     <div class="logo">
       <a href="home.html"><img src="../assets/Screenshot 2025-11-13 164623.png" alt="Doughlightful Logo"></a>
       <span>DOUGHLIGHTFUL</span>
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="../pages/home.html">Home</a></li>
-        <li><a href="../pages/product.html">Products</a></li>
-        <li><a href="../pages/recipe.html">Recipes</a></li>
-        <li><a href="../pages/about.html">About us</a></li>
-        <li><a href="../pages/dashboard.html">Dashboard</a></li>
+        <li><a href="../pages/home.html">HOME</a></li>
+        <li><a href="../pages/product.html">PRODUCTS</a></li>
+        <li><a href="../pages/recipe.html">RECIPES</a></li>
+        <li><a href="../pages/about.html">ABOUT US</a></li>
       </ul>
     </nav>
   </header>
-  <h2 class="center">Seller</h2>
-  <h1>Add products: </h1>
-   <div class="product_cards">
-       <img src="" alt="">
-    <div class="buttons">
-       <button>Add Name</button>
-       <button>Add image</button>
-       <button>Add description</button>
-       <button>Add price</button>
-    </div>
-   </div>
+<div class="dashboard">
+    <h2>Seller Dashboard</h2>
+
+    <form class="product-form">
+        <label>Seller Name</label>
+        <input type="text" placeholder="Enter seller name" required>
+
+        <label>Product Name</label>
+        <input type="text" placeholder="Enter product name" required>
+
+        <label>Product Images</label>
+        <input type="file" multiple>
+
+        <label>Description</label>
+        <textarea placeholder="Enter product description"></textarea>
+
+        <label>Price</label>
+        <input type="number" placeholder="Enter price" required>
+
+        <label>Places</label>
+        <input type="text" placeholder="Available places">
+
+        <label>Discount (%)</label>
+        <input type="number" placeholder="Enter discount">
+
+        <button type="submit">Add Product</button>
+    </form>
+</div>
+
 </body>
 </html>

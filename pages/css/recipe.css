@@ -6,6 +6,8 @@
 }
 
 body {
+   margin: 0;
+  padding: 0;
   background-color: #fff5f5;
   padding: 20px;
 }
@@ -102,6 +104,7 @@ p.subtitle {
   display: flex;
   flex-direction: column;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -154,16 +157,18 @@ p.subtitle {
 .view-btn {
   background-color: #ff7e5f;
   color: white;
-  border: none;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 8px;
   font-size: 14px;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 .view-btn:hover {
   background-color: #ff9e7f;
 }
+
+
 
 .time {
   font-size: 12px;
